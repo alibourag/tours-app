@@ -1,0 +1,13 @@
+
+<div class=" mb-4">
+<div class="card" style="width: 18rem;" [ngClass]="{modeDarck : buttonText==='Oops, darck!'}">
+    <div class="image">
+        <img [src]="tour.imageURL"  [alt]="tour.title"  [title]="tour.title" class="card-img-top" >
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{tour.title | titlecase}}</h5>
+      <p class="carteDescription">{{tour.description}}</p>
+      <button (click)="modeDarck()">{{buttonText}}</button>
+    </div>
+  </div>
+</div>

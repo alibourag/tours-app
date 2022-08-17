@@ -1,0 +1,43 @@
+.card{
+  margin: 0px 10px 15px 10px;
+}
+.carteDescription{
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.modeDarck{
+    
+        background-color: rgb(31, 24, 24);
+    
+    h5,h2 {
+        color: aliceblue;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        color: aliceblue;
+      }
+      button {
+        background-color: rgb(19, 15, 15);
+        color: aliceblue;
+       
+        &:active {
+          transform: translate(1px, 1px);
+          box-shadow: lightgray 0 0 5px;
+        }
+      }
+
+}

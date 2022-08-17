@@ -1,0 +1,6 @@
+<div class="tourCart" [ngClass]="{modeDarck : buttonText==='Oops, darck!'}">
+    <h2>{{tour.title}}</h2>
+    <img [src]="tour.imageURL"  [alt]="tour.title"/>
+    <p>{{tour.description}}</p>
+    <button (click)="modeDarck()">{{buttonText}}</button>
+    </div>

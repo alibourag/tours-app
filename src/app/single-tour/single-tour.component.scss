@@ -1,0 +1,42 @@
+
+.tourCart{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    img {
+      width: 50%;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+    }
+    
+  }
+
+.modeDarck{
+    
+        background-color: rgb(31, 24, 24);
+    
+    h2 {
+        color: aliceblue;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        color: aliceblue;
+      }
+      button {
+        background-color: rgb(19, 15, 15);
+        color: aliceblue;
+       
+        &:active {
+          transform: translate(1px, 1px);
+          box-shadow: lightgray 0 0 5px;
+        }
+      }
+
+}

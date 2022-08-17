@@ -1,0 +1,22 @@
+
+<div *ngIf="tours && tours.length > 0" class="carousel-container" >
+    <img *ngFor="let imageTour of tours; let i =index " [src]="imageTour.imageURL" [alt]="imageTour.title"
+        [ngClass]="{'image-active': selectedIndex === i}"
+        class="fadee"
+    >
+    <div *ngIf="indecateur" class="carousel-dot-container">
+        <span *ngFor="let dot of tours; let i = index" class="dot"
+            [ngClass]="{'active': selectedIndex === i}"
+            (click)="selectImage(i)"
+        >
+        </span>
+    </div>
+    <div *ngIf="controls" class="btn-caro btn-prev">
+        <i class="fa fa-arrow-circle-left icon-carousel icon-prev"
+        (click)="OnPress()"></i>
+    </div>
+    <div *ngIf="controls" class="btn-caro btn-next">
+        <i class="fa fa-arrow-circle-right icon-carousel icon-next"
+        (click)="OnPress2()"></i>
+    </div>
+</div>
